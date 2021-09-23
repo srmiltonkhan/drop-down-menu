@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .profile-info{
+            text-align: center;
+            display: flex;
+            flex-direction: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: cadetblue;
+        }
+        .downChevron{
+            position: relative;
+            display: inline;
+            top: 2px;
+        }
+        .dropdwon-content{
+            display: none;
+            position: absolute;
+            left: 0;
+            top:17px;
+            width: 200px;
+            background-color: cadetblue;
+        }
+        .dropdwon-content a{
+            display: block;
+            text-align: left;
+            text-decoration: none;
+        }
+        .downChevron:hover .dropdwon-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-info">
+        <img src="" alt="t">   
+        <span>Milton Khan</span> 
+        <div class="downChevron">
+            <i class='bx bx-chevron-down'></i>
+            <div class="dropdwon-content">
+                <a href="">Profile Information</a>
+                <a href="">Logout</a>
+                <a href="">Change Password</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
